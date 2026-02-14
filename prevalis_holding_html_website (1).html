@@ -1,0 +1,111 @@
+I’m preparing the **professional Next.js website folder** for Prevalis Holding.
+
+Since I can’t directly send a folder here, I’ll give you the full **code for each essential file** so you can create the project on your computer. You’ll be able to copy-paste each file into a folder, then deploy with GitHub + Vercel as I described.
+
+---
+
+# **1. package.json**
+```json
+{
+  "name": "prevalis-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^13.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
+```
+
+# **2. next.config.js**
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
+module.exports = nextConfig
+```
+
+# **3. pages/index.js** (Home Page)
+```jsx
+import Head from 'next/head'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Prevalis Holding</title>
+        <meta name="description" content="Professional corporate website for Prevalis Holding" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <main style={{ fontFamily: 'Arial, sans-serif', background: '#0f172a', color: 'white', minHeight: '100vh', padding: '40px' }}>
+        <section style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <h1 style={{ fontSize: '48px' }}>Prevalis Holding</h1>
+          <p style={{ fontSize: '18px', color: '#cbd5e1' }}>Building sustainable businesses across real estate, finance, and emerging industries.</p>
+        </section>
+
+        <section style={{ marginBottom: '60px' }}>
+          <h2 style={{ fontSize: '32px', textAlign: 'center', marginBottom: '20px' }}>Who We Are</h2>
+          <p style={{ maxWidth: '700px', margin: '0 auto', color: '#cbd5e1', fontSize: '18px', textAlign: 'center' }}>
+            Prevalis Holding is a diversified investment and management company focused on building scalable subsidiaries, disciplined governance, and long-term value creation across multiple industries.
+          </p>
+        </section>
+
+        <section style={{ marginBottom: '60px' }}>
+          <h2 style={{ fontSize: '32px', textAlign: 'center', marginBottom: '20px' }}>Our Focus Areas</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
+            <div style={{ background: '#020617', padding: '24px', borderRadius: '16px', minWidth: '220px' }}>
+              <h3>Real Estate</h3>
+              <p>Property development, management, and long-term asset growth.</p>
+            </div>
+            <div style={{ background: '#020617', padding: '24px', borderRadius: '16px', minWidth: '220px' }}>
+              <h3>Financial Services</h3>
+              <p>Credit solutions, investment structuring, and capital growth.</p>
+            </div>
+            <div style={{ background: '#020617', padding: '24px', borderRadius: '16px', minWidth: '220px' }}>
+              <h3>Global Trade</h3>
+              <p>Strategic import, distribution, and cross-border partnerships.</p>
+            </div>
+            <div style={{ background: '#020617', padding: '24px', borderRadius: '16px', minWidth: '220px' }}>
+              <h3>Governance & Compliance</h3>
+              <p>Transparent leadership and structured corporate oversight.</p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <h2>Our Vision</h2>
+          <p style={{ color: '#cbd5e1', fontSize: '18px', maxWidth: '700px', margin: '0 auto' }}>
+            To become a leading African holding company recognized for integrity, innovation, and generational value creation.
+          </p>
+        </section>
+
+        <section style={{ textAlign: 'center' }}>
+          <h2>Contact Us</h2>
+          <p style={{ color: '#cbd5e1', fontSize: '18px' }}>Partner with us to build sustainable ventures and lasting impact.</p>
+          <a href="mailto:info@prevalis.com" style={{ display: 'inline-block', marginTop: '20px', padding: '14px 28px', background: '#6366f1', color: 'white', borderRadius: '12px', textDecoration: 'none', fontWeight: 'bold' }}>Contact Us</a>
+        </section>
+
+        <footer style={{ marginTop: '60px', borderTop: '1px solid #1e293b', padding: '20px', textAlign: 'center', color: '#64748b', fontSize: '14px' }}>
+          © {new Date().getFullYear()} Prevalis Holding. All rights reserved.
+        </footer>
+      </main>
+    </>
+  )
+}
+```
+
+---
+
+I can next provide **step 4 and 5 instructions in absolute detail**:  
+- How to push this folder to GitHub  
+- Deploy to Vercel  
+- Make it live **without 404 or old cache issues**  
+
+Do you want me to do that next?
